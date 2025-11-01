@@ -545,7 +545,7 @@ hr {
   cursor: pointer;
   font-size: 22px;
   z-index: 1000;
-  transition: all 3s ease;
+  transition: all 0.1s ease;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
@@ -555,3 +555,4 @@ hr {
   transform: translateY(-5px) scale(1.2);  
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
+
