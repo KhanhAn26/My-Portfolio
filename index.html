@@ -147,7 +147,7 @@
         <ul style="font-size: 25px; text-align: left;">
           <li>Coursera: Introduction to Python Fundamentals by the University of Colorado Boulder</li>
           <li>Coursera: Introduction to Python Functions by the University of Colorado Boulder</li>
-          <li>Coursera: Python Packages for Data Science</li>
+          <li>Coursera: Python Packages for Data Science by the University of Colorado Boulder</li>
           <li>Coursera: Expressway to Data Science: Python Programming by the University of Colorado Boulder</li>
         </ul>
         <div class="carousel">
@@ -505,5 +505,16 @@ function moveSlide(button, direction) {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
   </script>
+
+  <script>
+    document.getElementById("scrollTopBtn").onclick = function() {
+  const scrollStep = -window.scrollY / 20;
+  const scrollInterval = setInterval(() => {
+    if (window.scrollY !== 0) window.scrollBy(0, scrollStep);
+    else clearInterval(scrollInterval);
+  }, 15);
+};
+  </script>
 </body>
+
 </html>
