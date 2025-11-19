@@ -223,7 +223,7 @@ h2 {
   border-radius: 16px;
   background: linear-gradient(180deg,#fff,#f8fafc);
   box-shadow: 0 6px 18px rgba(16,24,40,0.06);
-  width: 800px;
+  width: 100%;
   padding: 20px 30px;
 }
 
@@ -343,7 +343,7 @@ hr {
   text-align: center;
   font-size: 22px;
   line-height: 1.5;
-  width: 530px;
+  width: 100%px;
 }
 
 .info-box:nth-child(1) { grid-column: 1; grid-row: 1; }
@@ -435,9 +435,10 @@ hr {
 .activity-box .left {
   display: flex;
   gap: 20px;
-  flex: 0 0 35%;
+  flex: none;
   align-items: stretch;
   height: 100%;
+  width: 100%;
 }
 
 .activity-box .left img {
@@ -678,8 +679,8 @@ hr {
 
 html, body {
   width: 100%;
-  overflow-x: auto;        /* cho phép kéo ngang khi cần */
-  min-width: 320px;        /* tránh quá hẹp */
+  overflow-x: hidden !important;        /* cho phép kéo ngang khi cần */
+  max-width: 100%;        /* tránh quá hẹp */
 }
 
 .container,
@@ -690,4 +691,7 @@ html, body {
   overflow-x: visible;
 }
 
-body { overflow-x: scroll !important; }
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
