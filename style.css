@@ -689,3 +689,5 @@ html, body {
   min-width: 0;            /* phá vỡ flex/grid cứng */
   overflow-x: visible;
 }
+
+body { overflow-x: scroll !important; }
