@@ -652,3 +652,26 @@ hr {
     width: 100%;
   }
 }
+
+@media (max-width: 1024px) {
+  .activity-box {
+    flex-direction: column;        /* đã có */
+  }
+  .activity-box .left {
+    flex: none !important;         /* bỏ 0 0 35% */
+    width: 100%;
+    max-width: 400px;              /* giới hạn chiều rộng hình */
+    margin: 0 auto;
+  }
+  .activity-box .left img {
+    width: 100%;
+    height: auto;                  /* quan trọng: bỏ height:100% */
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .activity-box .left {
+    max-width: 280px;
+  }
+}
