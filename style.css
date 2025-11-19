@@ -556,3 +556,99 @@ hr {
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
+/* ========================= */
+/* RESPONSIVE FIXES          */
+/* ========================= */
+
+/* Tablet & mobile */
+@media (max-width: 1024px) {
+
+  .info-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-box {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .activity-box {
+    flex-direction: column;
+  }
+
+  .activity-box .left {
+    flex: none;
+    width: 100%;
+  }
+
+  .activity-box .right {
+    margin-left: 0;
+  }
+
+  .activity-box .description {
+    font-size: 28px;
+  }
+
+  .tests-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .test-content img {
+    width: 80%;
+  }
+}
+
+/* Mobile nhỏ */
+@media (max-width: 768px) {
+
+  .info-section {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .activity-box {
+    gap: 20px;
+  }
+
+  .activity-box .description {
+    font-size: 22px;
+  }
+
+  .inline-fig {
+    width: 45%;
+  }
+
+  .tests-header h3 {
+    font-size: 20px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .tests-box {
+    width: 100%;
+  }
+}
+
+/* Mobile cực nhỏ */
+@media (max-width: 480px) {
+
+  .inline-fig {
+    width: 100%;
+  }
+
+  .activity-box .description {
+    font-size: 18px;
+  }
+
+  .test-content img {
+    width: 100%;
+  }
+}
