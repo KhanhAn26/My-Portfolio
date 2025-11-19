@@ -675,3 +675,17 @@ hr {
     max-width: 280px;
   }
 }
+
+html, body {
+  width: 100%;
+  overflow-x: auto;        /* cho phép kéo ngang khi cần */
+  min-width: 320px;        /* tránh quá hẹp */
+}
+
+.container,
+.activity-box,
+.info-section,
+.extracurriculars-wrapper {
+  min-width: 0;            /* phá vỡ flex/grid cứng */
+  overflow-x: visible;
+}
